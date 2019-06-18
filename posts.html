@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style1.css">
+        <title>Јас рециклирам</title>
+    </head>
+    
+    <!-- MAIN NAVIGATION -->
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-dark py-4" id="main-nav">
+            <div class="container">
+                <a href="index.html" class="navbar-brand" class="postioning">
+                    <img src="images/output-onlinepngtools (1).png" width="50" height="50" alt="">
+                    <h3 class="d-inline align-middle">Јас рециклирам</h3>
+                    </a>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav ml-auto">
+
+                                    <li class="nav-item active"><a href="#" class="nav-link">Хартија</a>
+                                    </li>
+                                    <li class="nav-item active"><a href="#" class="nav-link">Пластика</a>
+                                    </li>
+                                    <li class="nav-item active"><a href="#" class="nav-link">Стакло</a>
+                                    </li>
+                                    <li class="nav-item active"><a href="#" class="nav-link">Останато</a>
+                                    </li>
+                                    <li class="nav-link">Регистрирај се&nbsp;&nbsp;<i style='font-size:24px' class='fas'>&#xf007;</i>
+                                    </li>
+                                    <form class="form-inline ml-auto">
+                                        <input type="text" id="searchbutton" class="form-control mr-sm-2" placeholder="пребарувај...">
+                                        <button type="submit" class="btn btn-success">Најави се</button>
+                                        <!--  -->
+                                    </form>
+                                    <li class="nav-item active"><a href="posts.html" class="nav-link read-blog">Читај блог</a>
+                                    </li> 
+                                    
+                            </ul>
+                            </div>               
+            </div>
+            </nav>
+<!-- ASIDE -->
+<aside>
+<div class="container">
+    <div class="row w-100">
+        <div class="col col-md-4 pd-2">
+
+            <div class="card">
+              <div class="card-header bg-dark text-light">
+                    <button type="button" class="btn btn-square btn-success" id="aside-button">Последни</button>
+                    <button type="button" class="btn btn-square btn-success">Најчитани</button>
+              </div>
+              <div class="card-body">
+                    <div class="posted-articles"><h3 class="headings-aside"><a href="#">Oтпад во Карпош</a></h3>
+                        <div class="post-meta">
+                            <div class="tag">Отпад  |</div>
+                            <div class="category">Објавено 11 Април</div>
+                        </div>
+                <!-- <p class="author-cred">објавено од <a href="#">Кристина Кристи</a> 11 Април<a href="#">3 Коментари</a></p> -->
+                            <img src="images/radika.jpg" class="img-fluid rounded mx-auto d-block" width="200px" height="90px" alt="cleaning">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequuntur nobis dolor earum doloribus voluptates ut maiores? Recusandae, possimus temporibus.</p>
+                            <a href="#" class="more-link">Read More</a>
+                    </div> 
+
+                    <div class="posted-articles">
+                            <h3 class="headings-aside"><a href="#">Oтпад во Гази Баба</a></h3>
+                            <div class="post-meta">
+                                    <div class="tag">Отпад  |</div>
+                                    <div class="category">Објавено 11 Април</div>
+                            </div>
+                                <img src="images/parksumagazibaba.jpg"  class="img-fluid rounded mx-auto d-block" width="200px" height="90px" alt="cleaning">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequuntur nobis dolor earum doloribus voluptates ut maiores? Recusandae, possimus temporibus.</p>
+                                <a href="#" class="more-link">Read More</a>
+                    </div>
+
+                    <div class="posted-articles">
+                        <h3 class="headings-aside"><a href="#">Oтпад во Карпош</a></h3>
+                        <div class="post-meta">
+                                <div class="tag">Отпад  |</div>
+                                <div class="category">Објавено 11 Април</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequuntur nobis dolor earum doloribus voluptates ut maiores? Recusandae, possimus temporibus.</p>
+                        <a href="#" class="more-link">Read More</a>
+                    </div>
+
+            </div>
+            </div>
+        </div>
+        <!-- SECTION -->   
+        <div class="col col-md-8 pd-2">
+            <div class="card"> 
+                
+                <div class="card-header bg-dark text-light">
+                    <h3><a href="#">Што е отпад?</a></h3>
+                </div>
+                    <div class="card-body" id="article-results">
+                            <img src="images/parksumagazibaba.jpg" class="img-fluid card-img-top rounded mx-auto d-block" width="200px" height="90px" alt="cleaning">                 
+                            <p class="article-text-color">Отпадот е секоја материја или предмет што создавачот или поседувачот го отфрла, има намера
+                            да го отфрли или од него се бара да го отфрли.Едноставно кажано, отпадот е се 
+                            што е отфрлено, вишок, или на некој друг начин фрлено во животната средина, а што може да влијае
+                            врз неа. Само затоа што ние сметаме дека нешто е отпад, не значи дека тоа исчезнува. Тоа мора 
+                            нека да постои. Колку повеќе предмети користиме, толку повеќе генерираме отпад.</p>
+
+                    
+                </div>
+                    <!-- //2 -->
+                    <div class="card-header bg-dark text-light">
+                        <h3><a href="#">Рециклирање?</a></h3>
+                    </div>
+                        <div class="card-body" id="article-results">
+                                <img src="images/radika.jpg" class="img-fluid card-img-top rounded mx-auto d-block" width="200px" height="90px" alt="cleaning">    
+                                <p class="article-text-color">
+                                Рециклирање, подразбира процес на преработка на отпад во основна суровина која што може да се искористи за производство на исти или некој други производи. Рециклирањето се применува во рамките на основното начело на управување на отпад – 3Р правило:
+                                <ul>
+                                <li><strong>R- reduce (намалување на отпадот)</strong></li>
+                                
+                                <li><strong>R- reuse (реупотреба)</strong></li>
+                                
+                                <li><strong>R- recycle (рециклирање)</strong></li>
+                            </ul>
+                            <p class="article-text-color">Рециклирање на електронски и електричен отпад има голем значај – како од технолошко техничкиот аспект, економскиот аспект и од еколошкиот аспект. Имено со рециклирањето на ЕЕ отпад се намалува загадувањето на природната средина со опасни и отровни елементи, но исто така се намалува количество на овој вид на отпад кој што мора да се одложи на депонии, со што се продолжува векот на користењето на истите и се намалува потреба за изградба на нови.
+                                
+                                Отфрлени електронски и електрични уреди кој што се користеа во домаќинствата и во бизнис секторот, можат да се преработат во суровини кој што можат да се искористат за производство на исти уреди. Со рециклирање на ЕЕ отпад се постигнуваат големи заштеди на електрична енергија бидејќи се прескокнува дел на оној технолошки процес кој што е неопходен во преработка на природните суровини, како што е ископување на руди, преработка на нафта, флотација и слично.</p>
+    
+                        </div>                    
+            </div>
+        </div>
+    </div>                                    
+</div>
+</aside>
+     <!-- FOOTER -->
+     <footer id="main-footer" class="bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center py-4" id="footer-position">
+                        <h3 class="text-center">Јас Рециклирам</h3>
+                        <ul class='footer-ul'>
+                            <li><i class="fab fa-twitter icon"></i></li>
+                            <li><i class="fab fa-youtube icon"></i></li>
+                            <li><i class="fab fa-facebook-f icon"></i></li> 
+                            <li><i class="fab fa-instagram icon"></i></li>     
+                            <li><i class="fab fa-linkedin icon"></i></li>
+                            <li class='link'>Регистрирај се</li> 
+                            <li class='link'>Читај статија</li>
+                            <li class='link'>За нас</li>  
+                            <li class='link'>Контактирај не</li>    
+                        </ul>
+                        <hr class="new5 text-center">
+                        <p id="operated"><strong> by Кристина Иванова&copy;. 
+                            All logos and trademarks are property of 
+                            their respective owners.</strong><span id="dateyear"></span></p>   
+                    </div>
+                </div>
+                <div class="row" id="contact-form">
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <p id="logo-position"><img src="images/output-onlinepngtools (1).png" width="100px" ></p>
+                    </div>
+                    
+                    <div class="d-flex">
+                        <p>Внесете ја вашата адреса за да добивате пораки</br> и известувања од нас</p>
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <div class="input-group input-group-md mb-3">
+                                    <div class="input-group-prepend">
+                                    </div>
+                                    <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+                                    <input type="text" class="form-control" placeholder="Емаил">
+                                </div>
+                            </div>
+                    </div>                 
+                </div>
+        </footer> 
+
+    
+    
+        
+       
+</body>
+</html>
