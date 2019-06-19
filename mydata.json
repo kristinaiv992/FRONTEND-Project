@@ -11,10 +11,10 @@
         {
             "name": "Silvana",
             "surname": "Delovska",
-            "location": "Kumanovo",
+            "location": "Ohrid",
             "type": "Plastika",
             "date": "2019-05-19T18:32:19.046Z",
-            "uploads_url":"kontejner.jpg"
+            "uploads_url":"gjubreo.jpg"
         },
         {
             "name": "Mihajlo",
@@ -61,14 +61,16 @@
             "surname": "Petrovska",
             "location": "Bitola",
             "type": "Hartija",
-            "date": "2019-03-30T20:12:02.041Z"
+            "date": "2019-03-30T20:12:02.041Z",
+            "uploads_url":"gjubre1.jpg"
         },
         {
             "name": "Stojan",
             "surname": "Dimovski",
             "location": "Skopje",
             "type": "Plastika ",
-            "date": "2019-01-18T07:42:39.022Z"
+            "date": "2019-01-18T07:42:39.022Z",
+            "uploads_url":"novakorpakarposh.jpg"
         }
     ]
 }
