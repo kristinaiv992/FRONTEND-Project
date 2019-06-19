@@ -6,7 +6,11 @@
             "location": "Skopje",
             "type": "Staklo",
             "date": "2019-06-07T19:25:43.076Z",
+<<<<<<< HEAD
             "uploads_url":"photo1.jpg"
+=======
+            "uploads_url":"images/photo1.jpg"
+>>>>>>> ea76e71056934ff603eff8ef50c88432eeadb239
         },
         {
             "name": "Silvana",
