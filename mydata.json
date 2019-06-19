@@ -6,67 +6,71 @@
             "location": "Skopje",
             "type": "Staklo",
             "date": "2019-06-07T19:25:43.076Z",
-<<<<<<< HEAD
             "uploads_url":"photo1.jpg"
-=======
-            "uploads_url":"images/photo1.jpg"
->>>>>>> ea76e71056934ff603eff8ef50c88432eeadb239
         },
         {
             "name": "Silvana",
             "surname": "Delovska",
-            "location": "Kumanovo",
+            "location": "Ohrid",
             "type": "Plastika",
-            "date": "2019-05-19T18:32:19.046Z"
+            "date": "2019-05-19T18:32:19.046Z",
+            "uploads_url":"gjubreojpg.jpg"
         },
         {
             "name": "Mihajlo",
             "surname": "Apostolov",
             "location": "Gevgelija",
             "type": "Hartija",
-            "date": "2019-03-10T12:02:09.023Z"
+            "date": "2019-03-10T12:02:09.023Z",
+             "uploads_url":"kontejner.jpg"
         },
         {
             "name": "Kristijan",
             "surname": "Filipovski",
             "location": "Ohrid",
             "type": "Ostanato",
-            "date": "2019-04-20T09:22:59.003Z"
+            "date": "2019-04-20T09:22:59.003Z",
+             "uploads_url":"parkohrid.jpg"
         },
         {
             "name": "Daniela",
             "surname": "Gjorgjievska",
             "location": "Gevgelija",
             "type": "Ostanato",
-            "date": "2019-06-02T19:41:29.013Z"
+            "date": "2019-06-02T19:41:29.013Z",
+             "uploads_url":"radika.jpg"
         },
         {
             "name": "Mirjana",
             "surname": "Stanojkovikj",
             "location": "Skopje",
             "type": "Plastika",
-            "date": "2019-01-18T07:42:39.022Z"
+            "date": "2019-01-18T07:42:39.022Z",
+             "uploads_url":"matka.jpg"
         },
         {
             "name": "Goran",
             "surname": "Peev",
             "location": "Tetovo",
             "type": "Staklo",
-            "date": "2019-04-29T17:52:09.047Z"
+            "date": "2019-04-29T17:52:09.047Z",
+             "uploads_url":"tetovo-gjubre-3.jpg"
         },
         {
             "name": "Gorjana",
             "surname": "Petrovska",
             "location": "Bitola",
             "type": "Hartija",
-            "date": "2019-03-30T20:12:02.041Z"
+            "date": "2019-03-30T20:12:02.041Z",
+            "uploads_url":"gjubre1.jpg"
         },
         {
             "name": "Stojan",
             "surname": "Dimovski",
             "location": "Skopje",
             "type": "Plastika ",
-            "date": "2019-01-18T07:42:39.022Z"
+            "date": "2019-01-18T07:42:39.022Z",
+            "uploads_url":"novakorpakarposh.jpg"
         }
     ]
 }
