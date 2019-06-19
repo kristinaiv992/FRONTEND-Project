@@ -44,7 +44,7 @@ let userAppend = (array) =>
     <p class="card-text">${item.surname}</p>
     <p class="card-text">${item.location}</p>
     <p class="card-text">${item.type}</p>
-    <p class="card-text">${item.photo_url}</p>
+    <p class="card-text"> ${item.uploads_url}
     </div>
     </div>
   `)
