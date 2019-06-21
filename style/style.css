@@ -24,13 +24,36 @@ border: 5.5px solid #ffffff;
 background-color: #343a40;
 border-radius: 1.25rem;  
 }
-.card-body{
+/* .card-body{
 
 height: 390px;
 width: 300px;
 background-color: #095509e5;       
+} */
+.d-flex{
+    margin: 10px;
 }
 
+.card-body{
+    background-color: #4d504de5;     
+}
+/*CARDS BORDER */
+div.nameimageinfo {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid rgb(186, 186, 190);
+    border-radius: 20px;
+}
+div.green {
+    background: linear-gradient(to bottom right, #2e382d,#a0d86c);
+}
+#vertical-1{
+    border: 1px dotted gray;
+}
+/*upload date on the card color*/
+#upload-date{
+    color: black;
+}
+/*------------------------------------------------------------------------*/
 div.card {
 width: 256px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -114,7 +137,7 @@ margin-left: 4px;
 margin-left: 30px;  
 }
 .navbar.navbar-expand-md.navbar-light.py-4, #newsletter, #main-footer{
-border: 5.5px solid #ffffff;
+border: .5px solid #ffffff;
 background-color: #343a40;
 border-radius: 1.25rem;  
 }
@@ -129,3 +152,9 @@ a.navbar-brand{
     margin-left: -120px;
 }
 
+
+.container-1{
+    display:flex;
+    align-items:center;
+    min-height:100vh;
+  }

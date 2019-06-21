@@ -1,6 +1,3 @@
-let myData = 'https://raw.githubusercontent.com/kristinaiv992/FRONTEND-Project/master/mydata.json';
-
-
 //fetch data from github
 var obj;
 //debugger;
@@ -12,22 +9,14 @@ console.log(data)
     obj = data;
     arr =[...obj.userUploads];
 userAppend(arr);
-    // for(let i=0; i<arr.length; i++){
-    //   console.log(arr[i].name)
-    // }
+makePagination(arr);
+userGlass(arr);
 
-  //   arr.foreach(user => console.log(user));
-  //   for( i=0; i<=obj.userUploads.length; i++ )
-  //   {
-  //     console.log(obj[i]);
-  //   }
-  //  console.log(arr);
-  })
+})
   .catch(err => console.log(err))
   for(let i=0; i<arr.length; i++){
       console.log(arr[i].name)
     }
-
 
 console.log(typeof arr);
 
@@ -35,25 +24,44 @@ let userAppend = (array) =>
 {
   for(item of array)
   {
-  $('body').append(
+  $('div.row.posted').append(
     `
-  <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">${item.name}</p>
-    <p class="card-text">${item.surname}</p>
-    <p class="card-text">${item.location}</p>
-    <p class="card-text">${item.type}</p>
-    <p class="card-text"><img src="images/${item.uploads_url}" height="230px" width="220px"></p>
+    <div class=list-group>
+    <div class="d-flex">
+    <div class="card bg-light mb-3" style="width: 18rem;">
+    <div id="upload-date" class="card-header border border-success"">Датум на објава: ${item.date}</div>
+
+    <img class="card-img-top rounded" src="images/${item.uploads_url}" height="230px" width="220px alt="Card image cap">
+    <div class="card-body">
+    <div class = "nameimageinfo green">
+    <table id="vertical-1" class="table table-hover mb-0">
+              <tr>
+                  <th>Име:</th>
+                  <td>${item.name}</td>
+              </tr>
+              <tr>
+                  <th>Презиме:</th>
+                  <td>${item.surname}</td>
+              </tr>
+              <tr>
+                  <th>Град:</th>
+                  <td> ${item.location}</td>
+              </tr>
+              <tr>
+              <th>Селекција:</th>
+              <td>${item.type}</td>
+          </tr>
+          </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     </div>
   `)
 }
 } 
 
-  
-  // <div class="card" style="width: 18rem;">
-  // <img class="card-img-top" src="..." alt="Card image cap">
-  // <div class="card-body">
-  // </div>
-  // </div>
+var numberofitems= $('div.list-group').length;
