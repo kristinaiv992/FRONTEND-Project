@@ -5,12 +5,11 @@ let arr =[];
 fetch('https://raw.githubusercontent.com/kristinaiv992/FRONTEND-Project/master/mydata.json')
   .then(res => res.json())
   .then(data => {
-console.log(data)
     obj = data;
+    userAppend(arr);
     arr =[...obj.userUploads];
-userAppend(arr);
 makePagination(arr);
-userGlass(arr);
+
 
 })
   .catch(err => console.log(err))
@@ -19,8 +18,8 @@ userGlass(arr);
     }
 
 console.log(typeof arr);
-
 let userAppend = (array) => 
+
 {
   for(item of array)
   {
@@ -64,4 +63,24 @@ let userAppend = (array) =>
 }
 } 
 
+
 var numberofitems= $('div.list-group').length;
+$("#a").on("click", function () {filterItems('Hartija') });
+$("#b").on("click", function () {filterItems('Plastika') });
+$("#c").on("click", function () {filterItems('Staklo')});
+$("#d").on("click", function () {filterItems('Ostanato')});
+
+function filterItems(allfilters)
+{
+  $('div.row.posted').empty();
+ let filteredArray = arr.filter( item => item.type == allfilters);
+  userAppend(filteredArray);
+
+}
+
+
+
+
+
+
+
