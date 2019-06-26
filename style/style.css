@@ -44,7 +44,7 @@ div.nameimageinfo {
     border-radius: 20px;
 }
 div.green {
-    background: linear-gradient(to bottom right, #2e382d,#a0d86c);
+    background: linear-gradient(rgb(47, 163, 124), rgb(31, 124, 46));
 }
 #vertical-1{
     border: 1px dotted gray;

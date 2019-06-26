@@ -1,7 +1,7 @@
 'use strict;'
 function makePagination() {
-    $(".pagination").empty();
+    //$(".pagination").empty();
     var numberofitems= $('.row.posted > .list-group').length;
-    console.log(numberofitems)
+    console.log(numberofitems);
 
 }

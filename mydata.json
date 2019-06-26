@@ -1,76 +1,183 @@
 {
     "userUploads":[
         {
-            "name": "Aleksandar",
-            "surname": "Josifovski",
-            "location": "Skopje",
-            "type": "Staklo",
+            "description": "Отпад",
+            "name": "Александар",
+            "surname": "Јосифовски",
+            "location": "Скопје",
+            "type": "Стакло",
             "date": "2019-06-07T19:25:43.076Z",
-            "uploads_url":"photo1.jpg"
+            "uploads_url":"1.jpg"
         },
         {
-            "name": "Silvana",
-            "surname": "Delovska",
-            "location": "Ohrid",
-            "type": "Plastika",
+            "description": "Депонија",
+            "name": "Силвана",
+            "surname": "Делоска",
+            "location": "Охрид",
+            "type": "Пластика",
             "date": "2019-05-19T18:32:19.046Z",
-            "uploads_url":"Ohrid.jpg"
+            "uploads_url":"2.jpg"
         },
         {
-            "name": "Mihajlo",
-            "surname": "Apostolov",
-            "location": "Gevgelija",
-            "type": "Hartija",
+            "description": "Остатоци",
+            "name": "Михајло",
+            "surname": "Апостолов",
+            "location": "Гевгелија",
+            "type": "Хартија",
             "date": "2019-03-10T12:02:09.023Z",
-             "uploads_url":"kontejner.jpg"
+             "uploads_url":"3.jpg"
         },
         {
-            "name": "Kristijan",
-            "surname": "Filipovski",
-            "location": "Ohrid",
-            "type": "Ostanato",
+            "description": "Отпадни материјали",
+            "name": "Кристијан",
+            "surname": "Филиповски",
+            "location": "Охрид",
+            "type": "Останато",
             "date": "2019-04-20T09:22:59.003Z",
-             "uploads_url":"parkohrid.jpg"
+             "uploads_url":"4.jpg"
         },
         {
-            "name": "Daniela",
-            "surname": "Gjorgjievska",
-            "location": "Gevgelija",
-            "type": "Ostanato",
+            "description": "Отпадни хартии",
+            "name": "Даниела",
+            "surname": "Ѓоргиевска",
+            "location": "Гевгелија",
+            "type": "Останато",
             "date": "2019-06-02T19:41:29.013Z",
-             "uploads_url":"radika.jpg"
+             "uploads_url":"5.jpg"
         },
         {
-            "name": "Mirjana",
-            "surname": "Stanojkovikj",
-            "location": "Skopje",
-            "type": "Plastika",
+            "description": "Отпад",
+            "name": "Мирјана",
+            "surname": "Станојковиќ",
+            "location": "Скопје",
+            "type": "Пластика",
             "date": "2019-01-18T07:42:39.022Z",
-             "uploads_url":"matka.jpg"
+             "uploads_url":"6.jpg"
         },
         {
-            "name": "Goran",
-            "surname": "Peev",
-            "location": "Tetovo",
-            "type": "Staklo",
+            "description": "Депонија",
+            "name": "Горан",
+            "surname": "Пеев",
+            "location": "Тетово",
+            "type": "7",
             "date": "2019-04-29T17:52:09.047Z",
-             "uploads_url":"tetovo-gjubre-3.jpg"
+             "uploads_url":"7.jpg"
         },
         {
-            "name": "Gorjana",
-            "surname": "Petrovska",
-            "location": "Bitola",
-            "type": "Hartija",
+            "description": "Отпадни материјали",
+            "name": "Горјана",
+            "surname": "Петровска",
+            "location": "Битола",
+            "type": "Хартија",
             "date": "2019-03-30T20:12:02.041Z",
-            "uploads_url":"gjubre1.jpg"
+            "uploads_url":"8.jpg"
         },
         {
-            "name": "Stojan",
-            "surname": "Dimovski",
-            "location": "Skopje",
-            "type": "Plastika",
+            "description": "Отпад",
+            "name": "Стојан",
+            "surname": "Димовски",
+            "location": "Скопје",
+            "type": "Пластика",
             "date": "2019-01-18T07:42:39.022Z",
-            "uploads_url":"novakorpakarposh.jpg"
+            "uploads_url":"9.jpg"
+        },
+        {
+            "description": "Остатоци",
+            "name": "Милош",
+            "surname": "Анѓелковиќ",
+            "location": "Тетово",
+            "type": "Останато",
+            "date": "2018-12-28T17:05:09.030Z",
+            "uploads_url":"10.jpg"
+        },
+        {
+            "description": "Отпадни материјали",
+            "name": "Кристина",
+            "surname": "Кузмановска",
+            "location": "Гостивар",
+            "type": "Стакло",
+            "date": "2019-06-26T07:48:39.012Z",
+            "uploads_url":"11.jpg"
+        },
+        {
+            "description": "Отпадни хартии",
+            "name": "Наташа",
+            "surname": "Станчева",
+            "location": "Охрид",
+            "type": "Пластика",
+            "date": "2019-06-30T07:34:39.042Z",
+            "uploads_url":"12.jpg"
+        },
+        {
+            "description": "Остатоци",
+            "name": "Невена",
+            "surname": "Филиповска",
+            "location": "Битола",
+            "type": "Хартија",
+            "date": "2019-05-03T07:02:39.052Z",
+            "uploads_url":"13.jpg"
+        },
+        {
+            "description": "Отпадни хартии",
+            "name": "Александра",
+            "surname": "Димиќ",
+            "location": "Битола",
+            "type": "Хартија",
+            "date": "2019-03-23T07:01:10.000Z",
+            "uploads_url":"14.jpg"
+        },
+        {
+            "description": "Остатоци",
+            "name": "Марија",
+            "surname": "Станчевска",
+            "location": "Штип",
+            "type": "Пластика",
+            "date": "2019-04-12T07:12:39.008Z",
+            "uploads_url":"15.jpg"
+        },
+        {
+            "description": "Депонија",
+            "name": "Петар",
+            "surname": "Владимиров",
+            "location": "Скопје",
+            "type": "Стакло",
+            "date": "2019-02-13T07:51:39.026Z",
+            "uploads_url":"16.jpg"
+        },
+        {
+            "description": "Отпадни материјали",
+            "name": "Мартин",
+            "surname": "Стојчев",
+            "location": "Гевгелија",
+            "type": "Останато",
+            "date": "2019-02-13T07:55:39.052Z",
+            "uploads_url":"17.jpg"
+        },
+        {
+            "description": "Отпад",
+            "name": "Илир",
+            "surname": "Шпеле",
+            "location": "Гевгелија",
+            "type": "Останато",
+            "date": "2019-10-11T07:43:39.032Z",
+            "uploads_url":"18.jpg"
+        },
+        {
+            "name": "Даниела",
+            "surname": "Ѓурчакова",
+            "location": "Куманово",
+            "type": "Пластика",
+            "date": "2019-07-08T07:14:39.017Z",
+            "uploads_url":"19.jpg"
+        },
+        {
+            "description": "Отпад",
+            "name": "Бојан",
+            "surname": "Петковски",
+            "location": "Скопје",
+            "type": "Стакло",
+            "date": "2019-03-18T07:22:39.019Z",
+            "uploads_url":"20.jpg"
         }
     ]
 }
