@@ -158,3 +158,36 @@ a.navbar-brand{
     align-items:center;
     min-height:100vh;
   }
+
+  /* first paragrapph in cards color decor*/
+  #colored-font{
+    box-shadow:
+    -10px 0px 0px #28a745,
+    10px 0px 0px #28a745,
+    0px 0px 10px rgba(0,0,0,0.5);
+  -moz-box-shadow:
+    -10px 0px 0px #28a745,
+    10px 0px 0px #28a745,
+    0px 0px 10px rgba(0,0,0,0.5);
+  -webkit-box-shadow:
+    -10px 0px 0px #28a745,
+    10px 0px 0px #28a745,
+    0px 0px 10px rgba(0,0,0,0.5);
+
+    letter-spacing: 4;
+    text-shadow:0 -1px 5px rgba(47, 68, 52, 0.75);
+    color:#ffffff;
+background: #28a745;
+    font-size: 20px;
+
+  }
+
+  /* no matches found box*/
+
+#matches {
+    background:#ccc; 
+    line-height:200px; 
+    height:200px; width:300px;
+    margin:25px auto; 
+    padding:5px; 
+  }

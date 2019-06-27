@@ -29,7 +29,7 @@ let userAppend = (array) =>
     <div class="d-flex">
     <div class="card bg-light mb-3" style="width: 18rem;">
     <div id="upload-date" class="card-header border border-success""><b>Датум на објава:</b> ${item.date.substring(0,10)}</div>
-    <p>${item.description}</p>
+    <p id="colored-font" class="filter-description">${item.description}</p>
     <img class="card-img-top rounded" src="images/${item.uploads_url}" height="230px" width="220px alt="Card image cap">
     <div class="card-body">
     <div class = "nameimageinfo green">
@@ -105,14 +105,89 @@ $("#gevgelija").on("click", function () {filterItemsbyCity('Гевгелија')
 /* -------------------------------------------- */
 //Search menu filter
 
-function filterNames(){
-  let filterValue = document.getElementById('searchbutton').value.toUpperCase();
-  let searchedLocation = document.getElementById('search-location');
+
+function NoMatch(){
+  userAppend(arr);
+  $('div.row.posted').empty();
+  $('div.row.posted').append(`<div id="matches"> No matches are found please try again! </div>`)
+}
+
+let filterInput = document.getElementById('searchbutton');
+// filterInput.addEventListener('keyup', filterByDescription);
+
+let selectedDescriptions = [];
+filterInput.addEventListener('keypress', function filterByDescription() {
+  //debugger;
+  
+  let inputs = $('#searchbutton').val().toLowerCase();
+  if (inputs.length == 0 || inputs.length == "" ) 
+  {
+    //tuka ima problem noMatch() se povikuva na mnogu kratko i se pojavuva siv kvadrat kaj sto pisuva deka no mathes are found i odma bega!
+    NoMatch()
+    // $('#searchbutton').val("");
+    return;
+  }
+  else 
+  {
+    arr.forEach(function (item) {
+      return selectedDescriptions.push(item.description.toLowerCase())
+    })
+    
+    
+  selectedDescriptions.forEach(function (name) {
+      
+    if (name.includes(inputs)) {
+      var check = arr.find(function (check) {
+       check.description.toLowerCase() === name;
+      });
+      return userAppend(check);       
+    }
+    });
+};
+});
+console.log(selectedDescriptions)
 
 
 
 
 
+//version 1
+// let flag = true;
+// let selectedPhones = [];
+// function filterByDescription () {
+//   var inputs = document.getElementById('searchbutton').value.toUpperCase();
+//   if ($("#searchbutton").val().length == 0) {
+
+//     flag = false;
+//     console.log("Nothing matches!")
+//   }
+
+//   for (const item of arr) {
+//     let counter = 0;
+//     for (const input of inputs) {
+//       if (item.description.toLowerCase().includes(input)) {
+  //         counter++;
+//       }
+//     }
+//     if (counter == inputs.length)
+//       selectedPhones.push(item)
+//   }
+// console.log(inputs)
+//   }
 
 
+// const searchBtn = document.getElementById('searchbutton').value.toLowerCase().split(" ");
+// console.log(searchBtn)
 
+//---------------------------------------------------------------------------------------------
+//version 2
+// const searchBtn = document.getElementById('searchbutton')
+// searchBtn.addEventListener('keyup', event => {
+//   let results = []
+ 
+//   const valueBtn = document.getElementById('searchbutton').value.toLowerCase();
+//   console.log(valueBtn[0]);
+//   let filteredBySearchbar = arr.filter( item => item.description == valueBtn);
+//   console.log (filteredBySearchbar )
+//   userAppend(filteredBySearchbar);
+// })
