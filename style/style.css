@@ -191,3 +191,41 @@ background: #28a745;
     margin:25px auto; 
     padding:5px; 
   }
+
+/* modal register*/
+.modal-header{
+    padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+  background-color: #343a40;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.modal-content {
+    height: 450px;
+    width: 273px;
+    
+}
+.textColor{
+    color: rgb(8, 165, 8);
+    text-shadow: 1px 1px 1px rgb(0, 97, 48);
+}
+.register.font.size{
+    font-size: 12px;
+}
+.modal-footer {
+    display: inline-block;
+}
+/* modal log in*/
+.pure-form .pure-checkbox, .pure-form .pure-radio, button.close {
+    margin: .5em 0;
+    display: block;
+}
+.tm-login-forgot-link {
+    color: green !important ;
+    line-height: 20px;
+}

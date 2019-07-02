@@ -9,13 +9,12 @@ fetch('https://raw.githubusercontent.com/kristinaiv992/FRONTEND-Project/master/m
     arr =[...obj.userUploads];
     userAppend(arr);
     makePagination(arr);
-
-
 })
-  .catch(err => console.log(err))
-  for(let i=0; i<arr.length; i++){
+.catch(err => console.log(err))
+  for(let i=0; i<arr.length; i++)
+  {
       console.log(arr[i].name)
-    }
+  }
 
 
 let userAppend = (array) => 
@@ -34,23 +33,23 @@ let userAppend = (array) =>
     <div class="card-body">
     <div class = "nameimageinfo green">
     <table id="vertical-1" class="table table-hover mb-0">
-              <tr>
-                  <th>Име:</th>
-                  <td>${item.name}</td>
-              </tr>
-              <tr>
-                  <th>Презиме:</th>
-                  <td>${item.surname}</td>
-              </tr>
-              <tr>
-                  <th>Град:</th>
-                  <td id="search-location"> ${item.location}</td>
-              </tr>
-              <tr>
-              <th>Селекција:</th>
-              <td>${item.type}</td>
-          </tr>
-          </table>
+      <tr>
+          <th>Име:</th>
+          <td>${item.name}</td>
+      </tr>
+      <tr>
+          <th>Презиме:</th>
+          <td>${item.surname}</td>
+      </tr>
+      <tr>
+          <th>Град:</th>
+          <td id="search-location"> ${item.location}</td>
+      </tr>
+      <tr>
+      <th>Селекција:</th>
+      <td>${item.type}</td>
+  </tr>
+  </table>
     </div>
     </div>
     </div>
@@ -87,7 +86,7 @@ function filterItemsbyCity(allfilters)
   $('div.row.posted').empty();
  let filteredbyCityArray = arr.filter( item => item.location == allfilters);
  if(filteredbyCityArray.length == 0) {
-  $('div.row.posted').append(`<div> No matches are found please try again! </div>`)
+  NoMatch()
  }
   userAppend(filteredbyCityArray);
 }
@@ -105,89 +104,65 @@ $("#gevgelija").on("click", function () {filterItemsbyCity('Гевгелија')
 /* -------------------------------------------- */
 //Search menu filter
 
-
 function NoMatch(){
-  userAppend(arr);
   $('div.row.posted').empty();
   $('div.row.posted').append(`<div id="matches"> No matches are found please try again! </div>`)
 }
 
-let filterInput = document.getElementById('searchbutton');
-// filterInput.addEventListener('keyup', filterByDescription);
-
-let selectedDescriptions = [];
-filterInput.addEventListener('keypress', function filterByDescription() {
-  //debugger;
-  
-  let inputs = $('#searchbutton').val().toLowerCase();
-  if (inputs.length == 0 || inputs.length == "" ) 
+$('#search').on('submit', (e) => {
+  e.preventDefault();
+  let filterValue = document.getElementById('searchInput').value.toLowerCase();
+  let newArray = arr.filter(item => item.description.toLowerCase().includes(filterValue));
+//debugger;
+  if(newArray.length !=0) 
   {
-    //tuka ima problem noMatch() se povikuva na mnogu kratko i se pojavuva siv kvadrat kaj sto pisuva deka no mathes are found i odma bega!
-    NoMatch()
-    // $('#searchbutton').val("");
-    return;
+  console.log(newArray);
+  $('div.row.posted').empty();
+  userAppend(newArray);
+  console.log(filterValue);
   }
   else 
-  {
-    arr.forEach(function (item) {
-      return selectedDescriptions.push(item.description.toLowerCase())
-    })
-    
-    
-  selectedDescriptions.forEach(function (name) {
-      
-    if (name.includes(inputs)) {
-      var check = arr.find(function (check) {
-       check.description.toLowerCase() === name;
-      });
-      return userAppend(check);       
+    {
+      $('div.row.posted').empty();
+      $('div.row.posted').append(`<div id="matches"> No matches are found please try again! </div>`)
+
+      setTimeout(function(){
+        
+        $('div.row.posted').empty();
+        userAppend(arr);
+      }, 3000);
     }
-    });
-};
+})
+
+/* -------------------------------------------- */
+//filter by name/surname
+$('#searchbyname').on('submit', (e)=> {
+e.preventDefault();
+let filterByName =  document.getElementById('namesurname').value.toLowerCase();
+
+var newerArray = arr.filter(obj => obj.name.toLowerCase().includes(filterByName) || obj.surname.toLowerCase().includes(filterByName));
+console.log(newerArray);
+
+$('div.row.posted').empty();
+userAppend(newerArray);
 });
-console.log(selectedDescriptions)
+/*------------------------------------------------ */
+//Log in / Register option 
+// var modal = document.getElementById('modal-wrapper');
+// window.onclick = function(event) {
+// if (event.target == modal) {
+// modal.style.display = 'none';
+// }
+// }
+document.getElementById('search').addEventListener('click', submitForm);
+
+function submitForm(e) {
+  e.preventDefault()
+  var name = getInputVal('name');
+}
+
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
 
 
-
-
-
-//version 1
-// let flag = true;
-// let selectedPhones = [];
-// function filterByDescription () {
-//   var inputs = document.getElementById('searchbutton').value.toUpperCase();
-//   if ($("#searchbutton").val().length == 0) {
-
-//     flag = false;
-//     console.log("Nothing matches!")
-//   }
-
-//   for (const item of arr) {
-//     let counter = 0;
-//     for (const input of inputs) {
-//       if (item.description.toLowerCase().includes(input)) {
-  //         counter++;
-//       }
-//     }
-//     if (counter == inputs.length)
-//       selectedPhones.push(item)
-//   }
-// console.log(inputs)
-//   }
-
-
-// const searchBtn = document.getElementById('searchbutton').value.toLowerCase().split(" ");
-// console.log(searchBtn)
-
-//---------------------------------------------------------------------------------------------
-//version 2
-// const searchBtn = document.getElementById('searchbutton')
-// searchBtn.addEventListener('keyup', event => {
-//   let results = []
- 
-//   const valueBtn = document.getElementById('searchbutton').value.toLowerCase();
-//   console.log(valueBtn[0]);
-//   let filteredBySearchbar = arr.filter( item => item.description == valueBtn);
-//   console.log (filteredBySearchbar )
-//   userAppend(filteredBySearchbar);
-// })
